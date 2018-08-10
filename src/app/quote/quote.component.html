@@ -1,4 +1,6 @@
-<div>
-    <h1>Passion Led Us Here!</h1>
-</div>
+<h1>
+</h1>
+<ul>
+    <li *ngFor='let wisdom of quotes'>{{wisdom.id + wisdom.quote}}</li>
+</ul>
 <app-quote-details></app-quote-details>
