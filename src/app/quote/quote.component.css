@@ -1,5 +1,11 @@
 h1 {
-    color: black;
-    font-size: 30px;
-    padding: 60px;
+    color: white;
+}
+
+ul li {
+    color: red;
+    font-size: 40px;
+    padding: 200px;
+    list-style: none;
+    float: right;
 }

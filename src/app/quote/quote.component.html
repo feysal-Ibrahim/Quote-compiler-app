@@ -1,6 +1,9 @@
-<h1>
-</h1>
+<h1>welcome to {{title}} </h1>
+
 <ul>
-    <li *ngFor='let wisdom of quotes'>{{wisdom.id + wisdom.quote}}</li>
+    <li *ngFor='let wisdom of quotes'>{{wisdom.id + wisdom.quote + wisdom.author}}</li>
 </ul>
+<p *ngIf='quotes.length > 5'>You have too many</p>
+
+
 <app-quote-details></app-quote-details>
