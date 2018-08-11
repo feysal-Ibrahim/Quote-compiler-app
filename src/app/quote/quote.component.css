@@ -9,3 +9,7 @@ ul li {
     list-style: none;
     float: right;
 }
+
+h3 {
+    text-align: center;
+}

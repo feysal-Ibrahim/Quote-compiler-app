@@ -4,5 +4,6 @@ export class Quote {
       public author: string,
       public upVotes: number,
       public downVotes: number,
-      public dateCreated: Date )  {}
+      public dateCreated: Date ) {this.showDetails = false; }
 }
+
