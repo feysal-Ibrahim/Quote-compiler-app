@@ -8,11 +8,9 @@ import {Quote} from '../quote';
 export class QuoteComponent implements OnInit {
   title = 'Quotes Generating App!';
   quotes = [
-    new Quote(1, 'Feysal', 'PASSION LEAD US HERE'),
-    new Quote(1, 'Feysal', 'PASSION LEAD US HERE'),
-    new Quote(1, 'Feysal', 'PASSION LEAD US HERE'),
-    new Quote(1, 'Feysal', 'PASSION LEAD US HERE'),
-  ];
+    new Quote('PASSION LEAD US HERE', 'FEYSAL IBRAHIM', 0, 120, new Date (10 / 8 / 2018))
+    ];
+
 
   constructor() { }
 

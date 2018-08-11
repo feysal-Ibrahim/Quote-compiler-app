@@ -1,7 +1,14 @@
-<h1>welcome to {{title}} </h1>
-
-<ul>
-    <li *ngFor='let wisdom of quotes'>{{wisdom.id + wisdom.quote + wisdom.author}}</li>
-</ul>
-<p *ngIf='quotes.length > 5'>You have too many</p>
-<app-quote-form></app-quote-form>
+<h1>welcome to {{title}}</h1>
+<div class="col-md-9">
+    <div class="Jumbotron" *ngFor="let wisdom of quotes;let i= index">
+        <h3>QUOTE: {{wisdom.quote}}</h3>
+        <hr>
+        <p>AUTHOR'S NAME: {{wisdom.author}}</p>
+        <hr>
+        <p>NUMBER OF UPVOTES:{{wisdom.upVotes}}</p>
+        <hr>
+        <p>NUMBER OF DOWNVOTES:{{wisdom.downVotes}}</p>
+        <hr>
+        <p>DATE CREATED:{{wisdom.dateCreated}}</p>
+    </div>
+    <app-quotes-details></app-quotes-details>
