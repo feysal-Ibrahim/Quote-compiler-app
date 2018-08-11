@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    color: #369;
+}
+
+.Jumbotron {
+    background-color: skyblue;
+    padding: 50px 0 50px 0;
+    margin: 20px 20px 20px 20px;
+}

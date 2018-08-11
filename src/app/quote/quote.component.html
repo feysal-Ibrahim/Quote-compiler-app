@@ -1,18 +1,12 @@
 <h1>welcome to {{title}}</h1>
 <hr>
 <br>
-<div class="row">
-    <div class="col-md-11">
-        <div class="Jumbotron" *ngFor="let wisdom of quotes;let i= index">
-            <h3>QUOTE: {{wisdom.quote}}</h3>
-            <br>
-            <p>AUTHOR'S NAME: {{wisdom.author}}</p>
-            <p>NUMBER OF UPVOTES:{{wisdom.upVotes}}</p>
-            <p>NUMBER OF DOWNVOTES:{{wisdom.downVotes}}</p>
-            <p>DATE CREATED:{{wisdom.dateCreated}}</p>
-        </div>
-        <div class="col-md-1">
-            <app-quote-form></app-quote-form>
-        </div>
-    </div>
+<div class="Jumbotron" *ngFor="let wisdom of quotes;let i= index">
+    <h3>QUOTE: {{wisdom.quote}}</h3>
+    <br>
+    <p>AUTHOR'S NAME: {{wisdom.author}}</p>
+    <p>NUMBER OF UPVOTES:{{wisdom.upVotes}}</p>
+    <p>NUMBER OF DOWNVOTES:{{wisdom.downVotes}}</p>
+    <p>DATE CREATED:{{wisdom.dateCreated}}</p>
 </div>
+<app-quote-form></app-quote-form>

@@ -13,3 +13,10 @@ ul li {
 h3 {
     text-align: center;
 }
+
+.Jumbotron {
+    background-color: skyblue;
+    padding: 50px;
+    margin: 90px;
+    float: right;
+}
