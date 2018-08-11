@@ -1,23 +1,32 @@
 <div class="container-fluid">
     <div class="row">
-        <form>
-            <div class="form-group">
+        <form #userForm="ngForm">
+            {{userForm.value | json}}
 
+            <div class="form-group">
                 <label for="quote">Quote: </label>
-                <input type="text" required class="form-control" id="name" name="quote">
+                <input type="text" required class="form-control" name="quote" [ngModel]="userForm.quote">
 
             </div>
             <div class="form-group">
                 <label for="Author's name">Author's name: </label>
-                <input type="text" required class="form-control" id="name">
+                <input type="text" required class="form-control" name="author" [ngModel]="userForm.author">
             </div>
             <div class="form-group">
                 <label for="Submission">Submitted by: </label>
-                <input type="text" required class="form-control" id="name">
+                <input type="text" required class="form-control" name="sumbmission" [ngModel]="userForm.person">
+            </div>
+            <div class="form-group">
+                <input class="form-check-input" required class="form-control" name="downvote" [ngModel]="userForm.upVote" type="button">
+                <label for="upvote">Upvote: </label>
+            </div>
+            <div class="form-group">
+                <input class="form-check-input" required class="form-control" name="downvote" [ngModel]="userForm.downVote" type="button">
+                <label for="downvote">downvote: </label>
             </div>
             <div class="form-group">
                 <label for="submitted date">Submitted on: </label>
-                <input type="text" required class="form-control" id="name">
+                <input type="input" required class="form-cont" name="submit date" [ngModel]="userForm.Date">
             </div>
         </form>
     </div>
