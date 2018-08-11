@@ -1,22 +1,3 @@
 h1 {
-    color: white;
-}
-
-ul li {
     color: red;
-    font-size: 40px;
-    padding: 200px;
-    list-style: none;
-    float: right;
-}
-
-h3 {
-    text-align: center;
-}
-
-.Jumbotron {
-    background-color: skyblue;
-    padding: 50px;
-    margin: 90px;
-    float: right;
 }
