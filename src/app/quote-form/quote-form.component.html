@@ -1,34 +1,21 @@
-<div class="container-fluid">
-    <div class="row">
-        <form #userForm="ngForm">
-            {{userForm.value | json}}
-
-            <div class="form-group">
-                <label for="quote">Quote: </label>
-                <input type="text" required class="form-control" name="quote" [ngModel]="userForm.quote">
-
-            </div>
-            <div class="form-group">
-                <label for="Author's name">Author's name: </label>
-                <input type="text" required class="form-control" name="author" [ngModel]="userForm.author">
-            </div>
-            <div class="form-group">
-                <label for="Submission">Submitted by: </label>
-                <input type="text" required class="form-control" name="sumbmission" [ngModel]="userForm.person">
-            </div>
-            <div class="form-group">
-                <input class="form-check-input" required class="form-control" name="downvote" [ngModel]="userForm.upVote" type="button">
-                <label for="upvote">Upvote: </label>
-            </div>
-            <div class="form-group">
-                <input class="form-check-input" required class="form-control" name="downvote" [ngModel]="userForm.downVote" type="button">
-                <label for="downvote">downvote: </label>
-            </div>
-            <div class="form-group">
-                <label for="submitted date">Submitted on: </label>
-                <input type="input" required class="form-cont" name="submit date" [ngModel]="userForm.Date">
-            </div>
-        </form>
+<form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <div class="form-group">
+        <label for="quote">Quote: </label>
+        <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required>
     </div>
-</div>
-<app-quote-details></app-quote-details>
+    <div class="form-group">
+        <label for="name">Author's name: </label><br>
+        <input type="text" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
+    </div>
+    <div class="form-group">
+        <label for="person">Submitted by: </label><br>
+        <input type="text" id="person" [(ngModel)]="newQuote.person" name="person" #person="ngModel" required>
+    </div>
+    <div class="form-group">
+        <label for="Date">Submitted on: </label><br>
+        <input type="date" id="Date" [(ngModel)]="newQuote.dateCreated" name="Date" #Date="ngModel" required>
+        <div [hidden]="Date.valid||Date.pristine" class="alert alert-danger">
+        </div>
+    </div><br>
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>
