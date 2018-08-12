@@ -17,7 +17,7 @@ A Quote
 The author of the Quote,
 Name of the person submitting the Quote,
 The date the Quote is submitted.
-### Built Using
+### Technology Used
 Angular 6, CSS, HTML and
 Bootstrap
 ### Support and contact details
