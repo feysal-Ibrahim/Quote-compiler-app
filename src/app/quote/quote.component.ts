@@ -7,7 +7,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-    new Quote('passion brought us here', 'Feysal ibrahim', 'Addictives', 0, 0, new Date(2018, 5, 1)),
+    new Quote('Passion Brought us here', 'Feysal ibrahim', 'Addictives', 0, 0, new Date(2018, 5, 1)),
   ];
   createNewQuote(quote) {
     const quoteLength = this.quotes.length;
