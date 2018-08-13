@@ -3,7 +3,6 @@
         <app-quote-form (createQuote)="createNewQuote($event)"></app-quote-form>
     </div>
     <br>
-    <br>
     <div class="col-md-7">
         <div class="Jumbotron" *ngFor="let Quote of quotes;let i= index">
             <h3>Quote: {{Quote.quote}}</h3>
